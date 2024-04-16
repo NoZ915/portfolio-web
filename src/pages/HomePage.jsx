@@ -26,8 +26,16 @@ const projects = [
     website: "https://bayesian-student-mistake-finder.zeabur.app/"
   },
   {
-    title: "2023年上學期「資料庫系統」：BinGoBin電商網站",
-    date: "2023/12 ~ 2024/01"
+    title: "2023年上學期「資料庫系統」：BinGo併電商網站",
+    date: "2023/12 ~ 2024/01",
+    description: `
+    一個讓使用者可以快速找到人一起免運、併單、團購的平台，主要負責後端以及前端部分重構。
+    `,
+    image: "bingobin.png",
+    technologies: "前端使用EJS、CSS、JavaScript，後端使用NodeJS、Express，資料庫則利用MongoDB建置，並架設至Zeabur上",
+    github: "https://github.com/NoZ915/database-final-project",
+    website: "https://bingobin.zeabur.app/",
+    youtube: "https://www.youtube.com/watch?v=wkv-owmVaQA"
   },
   {
     title: "2023年上學期「機器學習」：手寫辨識系統",
