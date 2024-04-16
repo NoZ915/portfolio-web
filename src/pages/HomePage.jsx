@@ -20,10 +20,26 @@ const projects = [
     description: `
     為一用來診斷學生學習錯誤原因的系統，可由教師新增測驗，測驗內容包含題目以及錯誤類型，學生進入測驗後，將可即時算出每一個錯誤類型的熟悉度，並且可依照該題目選項的錯誤類型而推算出該題正確/錯誤率，而當測驗結束後會顯示最終結果，越不熟悉的錯誤類型將排序至最上方，且可以查看該錯誤類型之敘述，以及可透過教師提供的影音連結學習、複習，以上皆利用貝氏機率所完成。
     `,
-    image: "src/assets/bsmf.png",
+    image: "bsmf.png",
     technologies: "React JS、MUI、Node JS、Express JS、MongoDB，前後端均部署於Zeabur平台上。",
     github: "https://github.com/NoZ915/bayesian-student-mistake-finder",
     website: "https://bayesian-student-mistake-finder.zeabur.app/"
+  },
+  {
+    title: "2023年上學期「資料庫系統」：BinGoBin電商網站",
+    date: "2023/12 ~ 2024/01"
+  },
+  {
+    title: "2023年上學期「機器學習」：手寫辨識系統",
+    date: "2023/09 ~ 2023/10",
+    description: `
+    使用原生JavaScript（ Without AI Framework）完成，將MNIST資料集讀入之後作訓練，並且搭配p5.js供使用者可以在網頁中寫上數字。
+    `,
+    image: "hand-written.png",
+    technologies: "MLP多層感知器概念、JavaScript、HTML、CSS（將資料視覺化成長條圖）、p5.js",
+    github: "https://github.com/NoZ915/handwritten-digit-recognize",
+    website: "https://noz915.github.io/handwritten-digit-recognize/",
+    youtube: "https://www.youtube.com/watch?v=fKIbeqtwQpk"
   },
   {
     title: "畢業專題：百年南遇-基於 PixiJS 與 LINE Bot 之解謎遊戲",
@@ -32,7 +48,7 @@ const projects = [
     為一款自製解謎遊戲，從遊戲腳本、美術設計到程式設計皆自行完成。主要由pixi.js以及操作HTML DOM元素、CSS來完成網頁遊戲之畫面，而遊戲媒介則透過LINE Bot完成，背後則透過Express做為後端框架來建立伺服器連接，並將LINE Bot部署在Heroku這個雲平台上。
     
     PS 因Heroku收費因素，LINE Bot部分已從Heroku平台上下架`,
-    image: "src/assets/pah-ni-lam-gu.png",
+    image: "pah-ni-lam-gu.png",
     technologies: "HTML、CSS、JavaScript、Pixi.js、Express、Heroku、LINE Bot",
     github: "https://github.com/NoZ915/pah-ni-lam-gu",
     website: "https://noz915.github.io/pah-ni-lam-gu/"
