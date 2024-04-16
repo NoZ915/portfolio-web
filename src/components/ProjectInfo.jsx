@@ -25,7 +25,7 @@ function ProjectInfo({ title, date, description, image, technologies, github, we
           <EventNoteIcon />
           <Typography variant="h3" sx={{ ml: 1, fontSize: 18 }}>{date}</Typography>
         </Box>
-        <Typography sx={{ mt: 1, fontSize: 18 }}>{description}</Typography>
+        <Typography variant="h4" sx={{ mt: 1, fontSize: 18 }}>{description}</Typography>
         <Divider sx={{ mt: 1 }} />
         {technologies &&
           <Typography variant="h3" sx={{ mt: 1, fontSize: 18, fontWeight: 700, color: "#0276aa" }}>使用技術：</Typography>
@@ -50,7 +50,7 @@ function ProjectInfo({ title, date, description, image, technologies, github, we
           </Link>
         }
         {others &&
-          <Box>
+          <Box sx={{ mt: 3 }}>
             {others}
           </Box>
         }
@@ -58,7 +58,7 @@ function ProjectInfo({ title, date, description, image, technologies, github, we
 
       <Box sx={{ display: "flex", alignItems: "center" }}>
         <img
-          style={{ maxHeight: 400, marginLeft: 30 }}
+          style={{ width: "100%", maxHeight: 400, marginLeft: 30 }}
           src={image}
         />
       </Box>

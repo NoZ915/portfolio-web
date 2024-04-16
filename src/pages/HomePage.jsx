@@ -26,20 +26,20 @@ const projects = [
     ),
     image: "goodideas.png",
     others: (
-      <p style={{ marginTop: 30 }}>
+      <>
         <Link href="https://hackmd.io/@noz915/BJIRyzGrj" sx={{ display: "flex", fontSize: 18, color: "black" }} target="_blank" underline="hover">
           <WebIcon />
-          <Typography variant="h3" sx={{ ml: 1, fontSize: 18 }}>第五章 大師級函式：閉包與範圍</Typography>
+          <Typography sx={{ ml: 1, fontSize: 18 }}>第五章 大師級函式：閉包與範圍</Typography>
         </Link> <br />
         <Link href="https://hackmd.io/@noz915/rksy4m8js" sx={{ display: "flex", fontSize: 18, color: "black" }} target="_blank" underline="hover">
           <WebIcon />
-          <Typography variant="h3" sx={{ ml: 1, fontSize: 18 }}>第十章 正規表達式</Typography>
+          <Typography sx={{ ml: 1, fontSize: 18 }}>第十章 正規表達式</Typography>
         </Link><br />
         <Link href="https://ithelp.ithome.com.tw/users/20152526/ironman/5741" sx={{ display: "flex", fontSize: 18, color: "black" }} target="_blank" underline="hover">
           <WebIcon />
-          <Typography variant="h3" sx={{ ml: 1, fontSize: 18 }}>2022 iThome 鐵人賽 ：PixiJS 青銅玩家</Typography>
+          <Typography sx={{ ml: 1, fontSize: 18 }}>2022 iThome 鐵人賽 ：PixiJS 青銅玩家</Typography>
         </Link><br />
-      </p>
+      </>
     )
   },
   {
@@ -81,12 +81,12 @@ const projects = [
     title: "畢業專題：百年南遇-基於 PixiJS 與 LINE Bot 之解謎遊戲",
     date: "2022/02 ~ 2023/01",
     description: (
-      <p>
+      <>
         為一款自製解謎遊戲，從遊戲腳本、美術設計到程式設計皆自行完成。主要由pixi.js以及操作HTML DOM元素、CSS來完成網頁遊戲之畫面，而遊戲媒介則透過LINE Bot完成，背後則透過Express做為後端框架來建立伺服器連接，並將LINE Bot部署在Heroku這個雲平台上。
         <br />
         <br />
         PS 因Heroku收費因素，LINE Bot部分已從Heroku平台上下架
-      </p>
+      </>
 
     ),
     image: "pah-ni-lam-gu.png",
@@ -99,21 +99,21 @@ const projects = [
     title: "2022下學期「學習管理系統」：登革熱學習管理系統網站",
     date: "2022/10 ~ 2022/12",
     description: (
-      <p>
+      <>
         為一學習管理系統，從學習情境、課程內容設計，網站
         前端以及後端架設皆自行完成。該網站包含： <br />
         1. 學習互動（影片教學、問答、遊戲式互動測驗）<br />
         2. 成績紀錄與排行榜 <br />
         3. 留言板 <br />
         4. 登入 / 註冊頁面 <br />
-      </p>
+      </>
     ),
     technologies: (
-      <p>
+      <>
         1. 前端、後端：HTML、原生 CSS、DIVE、JavaScript、
         diveLinker、PHP、mySQL、phpmyadmin、cookie <br />
         2. 伺服器：XAMPP、ngrok
-      </p>
+      </>
     ),
     image: "lms.jpg",
     youtube: "https://www.youtube.com/watch?v=tv8FPuHtGyA"
@@ -122,7 +122,7 @@ const projects = [
     title: "2021上學期「網頁程式設計」：台灣旅遊導覽",
     date: "2021/10 ~ 2021/12",
     description: (
-      <p>
+      <>
         1. 透過 JS 串接交通部提供的 api，ajax 實現方法則用了 axios 的套件，地圖用了 Leaflet 這個 js 框架，以及地圖資料使用了openStreetMap， 而定位的部分則是使用了navigation web
         api。<br />
         2. CSS 則使用原生 CSS 來完成 lightbox，以及首頁滑動功能。<br />
@@ -131,14 +131,14 @@ const projects = [
         <br />
         PS 目前地圖資料原先串接交通部提供的腳踏車數量 api，因近期腳
         踏車 api 有更動，因此目前是讀取不到的，還請見諒！
-      </p>
+      </>
     ),
     technologies: (
-      <p>
+      <>
         1. 前端主要：HTML、CSS、JavaScript<br />
         2. API 串接：axios、使用交通部運輸資料流通服務平臺提供之 API<br />
         3. 地圖：Leaflet、openStreetMap、navigation web api<br />
-      </p>
+      </>
     ),
     image: "f2e.png",
     github: "https://github.com/NoZ915/2021F2E-week1_Taiwan-travel-guide",
@@ -148,12 +148,12 @@ const projects = [
     title: "2020上學期「JavaScript 程設」：記憶遊戲進階版",
     date: "2020/10 ~ 2020/12",
     description: (
-      <p>
+      <>
         藉由 JavaScript 完成的記憶遊戲，再加上 CSS 加入血條
         與會變色的腳色，將一般的記憶遊戲又更添樂趣。以及
         利用 localStorage 將分數紀錄，讓玩家可以再次挑戰自
         己的分數！
-      </p>
+      </>
     ),
     technologies: "HTML、CSS、JavaScript",
     image: "memory-game.png",
