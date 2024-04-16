@@ -52,14 +52,71 @@ const projects = [
   {
     title: "畢業專題：百年南遇-基於 PixiJS 與 LINE Bot 之解謎遊戲",
     date: "2022/02 ~ 2023/01",
-    description: `
-    為一款自製解謎遊戲，從遊戲腳本、美術設計到程式設計皆自行完成。主要由pixi.js以及操作HTML DOM元素、CSS來完成網頁遊戲之畫面，而遊戲媒介則透過LINE Bot完成，背後則透過Express做為後端框架來建立伺服器連接，並將LINE Bot部署在Heroku這個雲平台上。
-    
-    PS 因Heroku收費因素，LINE Bot部分已從Heroku平台上下架`,
+    description: (
+      <p>
+        為一款自製解謎遊戲，從遊戲腳本、美術設計到程式設計皆自行完成。主要由pixi.js以及操作HTML DOM元素、CSS來完成網頁遊戲之畫面，而遊戲媒介則透過LINE Bot完成，背後則透過Express做為後端框架來建立伺服器連接，並將LINE Bot部署在Heroku這個雲平台上。
+        <br />
+        <br />
+        PS 因Heroku收費因素，LINE Bot部分已從Heroku平台上下架
+      </p>
+
+    ),
     image: "pah-ni-lam-gu.png",
     technologies: "HTML、CSS、JavaScript、Pixi.js、Express、Heroku、LINE Bot",
     github: "https://github.com/NoZ915/pah-ni-lam-gu",
-    website: "https://noz915.github.io/pah-ni-lam-gu/"
+    website: "https://noz915.github.io/pah-ni-lam-gu/",
+    youtube: "https://www.youtube.com/watch?v=lX4oTrl02nE"
+  },
+  {
+    title: "2022下學期「學習管理系統」：登革熱學習管理系統網站",
+    date: "2022/10 ~ 2022/12",
+    description: (
+      <p>
+        為一學習管理系統，從學習情境、課程內容設計，網站
+        前端以及後端架設皆自行完成。該網站包含： <br />
+        1. 學習互動（影片教學、問答、遊戲式互動測驗）<br />
+        2. 成績紀錄與排行榜 <br />
+        3. 留言板 <br />
+        4. 登入 / 註冊頁面 <br />
+      </p>
+    ),
+    technologies: (
+      <p>
+        1. 前端、後端：HTML、原生 CSS、DIVE、JavaScript、
+        diveLinker、PHP、mySQL、phpmyadmin、cookie <br />
+        2. 伺服器：XAMPP、ngrok
+      </p>
+    ),
+    image: "lms.jpg",
+    youtube: "https://www.youtube.com/watch?v=tv8FPuHtGyA"
+  },
+  {
+    title: "2021上學期「網頁程式設計」：台灣旅遊導覽",
+    date: "2021/10 ~ 2021/12",
+    description: (
+      <p>
+        1. 透過 JS 串接交通部提供的 api，ajax 實現方法則用了 axios 的 <br />
+        套件，地圖用了 Leaflet 這個 js 框架，以及地圖資料使用了
+        openStreetMap， 而 定 位 的 部 分 則 是 使 用 了 navigation web
+        api。
+        2. CSS 則使用原生 CSS 來完成 lightbox，以及首頁滑動功能。<br />
+        3. 熱門活動則使用了當時剛學到的演算法 "bubble sort" 做排序。
+        <br />
+        <br />
+        PS 目前地圖資料原先串接交通部提供的腳踏車數量 api，因近期腳
+        踏車 api 有更動，因此目前是讀取不到的，還請見諒！
+      </p>
+    ),
+    technologies: (
+      <ul>
+        <li style={{ listStyle: "none" }}>1. 前端主要：HTML、CSS、JavaScript</li>
+        <li style={{ listStyle: "none" }}>2. API 串接：axios、使用交通部運輸資料流通服務平臺提供之 API</li>
+        <li style={{ listStyle: "none" }}>3. 地圖：Leaflet、openStreetMap、navigation web api</li>
+      </ul>
+    ),
+    image: "f2e.png",
+    github: "https://github.com/NoZ915/2021F2E-week1_Taiwan-travel-guide",
+    website: "https://noz915.github.io/2021F2E-week1_Taiwan-travel-guide/"
   }
 ]
 
