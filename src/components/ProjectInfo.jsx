@@ -16,7 +16,7 @@ const boxStyle = {
   backgroundColor: "white"
 }
 
-function ProjectInfo({ title, date, description, image, technologies, github, website, youtube }) {
+function ProjectInfo({ title, date, description, image, technologies, github, website, youtube, others }) {
   return (
     <Box sx={{ ...boxStyle }}>
       <Box sx={{ maxWidth: 700 }}>
@@ -25,11 +25,12 @@ function ProjectInfo({ title, date, description, image, technologies, github, we
           <EventNoteIcon />
           <Typography variant="h3" sx={{ ml: 1, fontSize: 18 }}>{date}</Typography>
         </Box>
-        <Typography paragraph sx={{ mt: 1, fontSize: 18 }}>{description}</Typography>
+        <Typography sx={{ mt: 1, fontSize: 18 }}>{description}</Typography>
         <Divider sx={{ mt: 1 }} />
-        <Typography variant="h3" sx={{ mt: 1, fontSize: 18, fontWeight: 700, color: "#0276aa" }}>使用技術：</Typography>
-        <Typography paragraph sx={{ mt: 1, fontSize: 18 }}>{technologies}</Typography>
-
+        {technologies &&
+          <Typography variant="h3" sx={{ mt: 1, fontSize: 18, fontWeight: 700, color: "#0276aa" }}>使用技術：</Typography>
+        }
+        <Typography sx={{ mt: 1, fontSize: 18 }}>{technologies}</Typography>
         {github &&
           <Link href={github} target="_blank" underline="hover" sx={{ display: "flex", mt: 1, color: "black" }}>
             <GitHubIcon />
@@ -47,6 +48,11 @@ function ProjectInfo({ title, date, description, image, technologies, github, we
             <YouTubeIcon />
             <Typography variant="h3" sx={{ ml: 1, fontSize: 18 }}>DEMO影片</Typography>
           </Link>
+        }
+        {others &&
+          <Box>
+            {others}
+          </Box>
         }
       </Box>
 

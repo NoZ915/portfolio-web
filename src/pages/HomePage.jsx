@@ -1,6 +1,7 @@
 import { Box, Typography, Link, Divider } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ProjectInfo from "../components/ProjectInfo";
+import WebIcon from '@mui/icons-material/Web';
 
 const boxStyle = {
   m: 3,
@@ -14,6 +15,33 @@ const boxStyle = {
   backgroundColor: "white"
 }
 const projects = [
+  {
+    title: "好想工作室",
+    date: "2021/04 ~ 2023/10",
+    description: (
+      <ul>
+        <li style={{ listStyle: "none" }}>1. 每周 JavaScript 讀書會，曾擔任導讀導讀內容包含閉包與範圍、正規表達式</li>
+        <li style={{ listStyle: "none" }}>2. 2022 iThome 鐵人賽 ：PixiJS 青銅玩家</li>
+      </ul>
+    ),
+    image: "goodideas.png",
+    others: (
+      <p style={{ marginTop: 30 }}>
+        <Link href="https://hackmd.io/@noz915/BJIRyzGrj" sx={{ display: "flex", fontSize: 18, color: "black" }} target="_blank" underline="hover">
+          <WebIcon />
+          <Typography variant="h3" sx={{ ml: 1, fontSize: 18 }}>第五章 大師級函式：閉包與範圍</Typography>
+        </Link> <br />
+        <Link href="https://hackmd.io/@noz915/rksy4m8js" sx={{ display: "flex", fontSize: 18, color: "black" }} target="_blank" underline="hover">
+          <WebIcon />
+          <Typography variant="h3" sx={{ ml: 1, fontSize: 18 }}>第十章 正規表達式</Typography>
+        </Link><br />
+        <Link href="https://ithelp.ithome.com.tw/users/20152526/ironman/5741" sx={{ display: "flex", fontSize: 18, color: "black" }} target="_blank" underline="hover">
+          <WebIcon />
+          <Typography variant="h3" sx={{ ml: 1, fontSize: 18 }}>2022 iThome 鐵人賽 ：PixiJS 青銅玩家</Typography>
+        </Link><br />
+      </p>
+    )
+  },
   {
     title: "2024年下學期「人工智慧」：應用貝氏機率在診斷型測驗推算學生學習錯誤原因",
     date: "2024/03 ~ 2024/04",
@@ -95,10 +123,8 @@ const projects = [
     date: "2021/10 ~ 2021/12",
     description: (
       <p>
-        1. 透過 JS 串接交通部提供的 api，ajax 實現方法則用了 axios 的 <br />
-        套件，地圖用了 Leaflet 這個 js 框架，以及地圖資料使用了
-        openStreetMap， 而 定 位 的 部 分 則 是 使 用 了 navigation web
-        api。
+        1. 透過 JS 串接交通部提供的 api，ajax 實現方法則用了 axios 的套件，地圖用了 Leaflet 這個 js 框架，以及地圖資料使用了openStreetMap， 而定位的部分則是使用了navigation web
+        api。<br />
         2. CSS 則使用原生 CSS 來完成 lightbox，以及首頁滑動功能。<br />
         3. 熱門活動則使用了當時剛學到的演算法 "bubble sort" 做排序。
         <br />
@@ -108,15 +134,40 @@ const projects = [
       </p>
     ),
     technologies: (
-      <ul>
-        <li style={{ listStyle: "none" }}>1. 前端主要：HTML、CSS、JavaScript</li>
-        <li style={{ listStyle: "none" }}>2. API 串接：axios、使用交通部運輸資料流通服務平臺提供之 API</li>
-        <li style={{ listStyle: "none" }}>3. 地圖：Leaflet、openStreetMap、navigation web api</li>
-      </ul>
+      <p>
+        1. 前端主要：HTML、CSS、JavaScript<br />
+        2. API 串接：axios、使用交通部運輸資料流通服務平臺提供之 API<br />
+        3. 地圖：Leaflet、openStreetMap、navigation web api<br />
+      </p>
     ),
     image: "f2e.png",
     github: "https://github.com/NoZ915/2021F2E-week1_Taiwan-travel-guide",
     website: "https://noz915.github.io/2021F2E-week1_Taiwan-travel-guide/"
+  },
+  {
+    title: "2020上學期「JavaScript 程設」：記憶遊戲進階版",
+    date: "2020/10 ~ 2020/12",
+    description: (
+      <p>
+        藉由 JavaScript 完成的記憶遊戲，再加上 CSS 加入血條
+        與會變色的腳色，將一般的記憶遊戲又更添樂趣。以及
+        利用 localStorage 將分數紀錄，讓玩家可以再次挑戰自
+        己的分數！
+      </p>
+    ),
+    technologies: "HTML、CSS、JavaScript",
+    image: "memory-game.png",
+    github: "https://github.com/NoZ915/memoryGame.github.io",
+    website: "https://noz915.github.io/memoryGame.github.io/",
+    youtube: "https://www.youtube.com/watch?v=W0LbF8JfuaA&sttick=0"
+  },
+  {
+    title: "2019上學期「運算思維」：迷宮打怪喝藥水",
+    date: "2019/10 ~ 2019/12",
+    description: "利用學校實驗室開發的 DIVE 平台完成之遊戲，並且搭配 JavaScript 來串接個個專案，達到可以跳轉地圖的功能。",
+    technologies: "DIVE 平台、JavaScript",
+    image: "dive.png",
+    youtube: "https://www.youtube.com/watch?v=dunxL9OHSIQ"
   }
 ]
 
@@ -148,6 +199,7 @@ function HomePage() {
             website={project.website}
             github={project.github}
             youtube={project.youtube}
+            others={project.others}
           />
         ))}
       </Box>
