@@ -6,12 +6,15 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const boxStyle = {
   display: "flex",
+  flexWrap: "wrap",
   justifyContent: "space-between",
   m: 3,
+  mr: 0,
+  ml: 0,
   width: 'auto',
   boxShadow: 2,
   pt: 3,
-  px: 4,
+  px: 3,
   pb: 3,
   backgroundColor: "white"
 }
@@ -58,7 +61,7 @@ function ProjectInfo({ title, date, description, image, technologies, github, we
 
       <Box sx={{ display: "flex", alignItems: "center" }}>
         <img
-          style={{ width: "100%", maxHeight: 400, marginLeft: 30 }}
+          style={{ width: "100%", maxHeight: 400 }}
           src={image}
         />
       </Box>
