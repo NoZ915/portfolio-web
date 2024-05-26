@@ -43,6 +43,17 @@ const projects = [
     )
   },
   {
+    title: "2024年下學期「人工智慧」：應用基因演算法進行題庫選題於平行測驗建置",
+    date: "2024/05",
+    description: `
+    為利用基因演算法來幫助選題，並且可用於平行測驗的建置中，讓使用者可以從題庫中一鍵按下，同時產生兩份難度相當，且題目完全不重複的試卷，使用場景例如教師需出兩份試卷，一份用於補考學生， 因此既難度相當符合公平性外，也因題目不重複出現使題目無曝光性。
+    `,
+    image: "ga.png",
+    technologies: "React JS、MUI、Node JS、Express JS、MongoDB，前後端均部署於Zeabur平台上。",
+    github: "https://github.com/NoZ915/GA-parallel-test-item-selection",
+    website: "https://ga-exam-item-selection.zeabur.app/"
+  },
+  {
     title: "2024年下學期「人工智慧」：應用貝氏機率在診斷型測驗推算學生學習錯誤原因",
     date: "2024/03 ~ 2024/04",
     description: `
