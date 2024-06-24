@@ -126,7 +126,7 @@ const projects = [
         2. 伺服器：XAMPP、ngrok
       </>
     ),
-    image: "lms.jpg",
+    image: "lms.png",
     youtube: "https://www.youtube.com/watch?v=tv8FPuHtGyA"
   },
   {
